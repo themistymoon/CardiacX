@@ -5,12 +5,18 @@ A full-stack application for analyzing heart sounds using machine learning, buil
 ## 🏗️ Project Structure
 
 ```
-heart1/
-├── backend/           # FastAPI Python backend
-│   ├── main.py       # Main application entry point
+├── backend/
+│   ├── app/      # FastAPI Python backend
+│   │   ├── main.py       # Main application entry point
 │   ├── models/       # ML models and data
 │   └── pyproject.toml # Python dependencies
+│   └── Dockerfile
+│   └── poetry.lock
+│   └── requirements.txt
 ├── frontend/         # React TypeScript frontend
+│   └── Dockerfile
+│   └── index.html
+│   └── nginx.conf
 │   ├── src/          # Source code
 │   ├── package.json  # Node.js dependencies
 │   └── vite.config.ts # Vite configuration
